@@ -1,0 +1,12 @@
+{
+  "name": "full-stack-social-media",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently -n BACKEND,FRONTEND -c blue,magenta \"pnpm --dir Backend dev\" \"pnpm --dir Frontend dev\"",
+    "install:all": "pnpm --dir Backend install && pnpm --dir Frontend install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
